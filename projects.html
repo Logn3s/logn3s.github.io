@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-<body background="http://eskipaper.com/images/blue-space-background-1.jpg">
+	<head>
+		<meta charset="UTF-8">
+		<title>Crib</title>
+		<link href="/style.css" rel="stylesheet" type="text/css" media="all">
+		<style>
+			body {
+				background: url("/images/background.jpg");
+				color: #0cf;
+				font-family: verdana;
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-size: cover;
 
+				margin: 1em 2em 0 2em;	
+			}
 
-    <meta charset="UTF-8">
-    <title>Crib</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  <audio loop autoplay>
-   <source src="https://cdn.discordapp.com/attachments/221003315801096194/221003764360937472/Sad_City.mp3" type="audio/mpeg">
-   dood get chrome dumbass
-  </audio>
-  
-<h1 align="center">Lognes' crib</h1>
-<h2 align="center">Project room</h2>
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 200px;
+				background-color: #000000;
+			}
 
+			li a {
+				display: block;
+				color: #00ccff;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
 
-<div style="text-align:center">    
-  <a href="index.html">Go Back</a>
-</div>
-
-<hr>
-
-<h2>I'm not currently working on any projects</h2>
-
-<hr>
+			li a:hover {
+				background-color: #00ccff;
+				color:#000000;
+			}
+		<style>
+	</head>
+	<body>
+		<div class="section header">
+			<h1>Lognes' Crib</h1>
+			<h2>Project room</h2>
+			<h3><a href="/">Go Back</a></h3>
+		</div>
+		<div class="section">
+			<h2>I'm not currently working on any projects</h2>
+		</div>
+		<div class="section">
+			<audio id="audioTag" loop autoplay controls src="/audio/sadcity.mp3">
+			</audio>
+			<script>
+				var audioTag = document.getElementById("audioTag");
+				audioTag.volume = 0.6;
+			</script>
+		</div>
+	</body>
+</html>
