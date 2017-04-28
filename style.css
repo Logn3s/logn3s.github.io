@@ -18,3 +18,8 @@ nav {
     width: 100%;
     background: url("nav_background");
 }
+nav ul {
+    margin: 0 auto;
+    width: 940px;
+    list-style: none;
+}
